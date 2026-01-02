@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaumudi Kalikar - Creative Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Lora', 'serif'],
+                    },
+                    colors: {
+                        slate: {
+                            850: '#1f2937',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f3f4f6;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        #resume-container {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 40px auto;
+            background: white;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sophisticated Border */
+        .page-border {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: #334155;
+            /* Slate 700 */
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 100%;
+            height: 1px;
+            background: #e2e8f0;
+        }
+
+        @media print {
+            body {
+                background: white;
+                margin: 0;
+            }
+
+            #resume-container {
+                margin: 0;
+                box-shadow: none;
+                width: 100%;
+                height: auto;
+                padding: 0;
+                /* Print margins handled by browser */
+            }
+
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="text-slate-800 antialiased">
+
+    <!-- Buttons -->
+    <div class="fixed top-8 left-8 z-50 flex flex-col gap-4 no-print">
+        <a href="/"
+            class="bg-white text-slate-700 font-medium py-2 px-4 rounded-lg shadow-lg hover:bg-slate-50 transition-all border border-slate-200 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5" />
+                <path d="M12 19l-7-7 7-7" />
+            </svg>
+            Back to Portfolio
+        </a>
+    </div>
+
+    <div class="fixed bottom-8 right-8 z-50 no-print">
+        <button onclick="downloadPDF()"
+            class="bg-slate-800 text-white font-bold py-3 px-6 rounded-full shadow-xl hover:bg-slate-900 transition-all transform hover:scale-105 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download PDF
+        </button>
+    </div>
+
+    <!-- Resume Page -->
+    <div id="resume-container">
+        <div class="page-border"></div>
+
+        <div class="p-12">
+            <!-- Header -->
+            <header class="flex justify-between items-start mb-12">
+                <div>
+                    <h1 class="text-5xl font-serif font-bold text-slate-900 mb-2">Kaumudi Kalikar</h1>
+                    <p class="text-xl text-slate-500 font-light tracking-wide">Python Developer</p>
+                </div>
+                <div class="text-right space-y-2 text-sm text-slate-600">
+                    <p class="flex items-center justify-end gap-2">
+                        +91 9766 516 480
+                        <span class="w-1.5 h-1.5 bg-slate-400 rounded-full"></span>
+                    </p>
+                    <p class="flex items-center justify-end gap-2">
+                        kaumudikalikar6@gmail.com
+                        <span class="w-1.5 h-1.5 bg-slate-400 rounded-full"></span>
+                    </p>
+                    <p class="flex items-center justify-end gap-2">
+                        Pune, India
+                        <span class="w-1.5 h-1.5 bg-slate-400 rounded-full"></span>
+                    </p>
+                    <div class="flex gap-3 justify-end pt-1">
+                        <a href="https://linkedin.com/in/kaumudi-kalikar"
+                            class="text-slate-400 hover:text-slate-800 transition-colors">LinkedIn</a>
+                        <span class="text-slate-300">|</span>
+                        <a href="https://github.com/kaumudi-kalikar"
+                            class="text-slate-400 hover:text-slate-800 transition-colors">GitHub</a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="grid grid-cols-12 gap-10">
+
+                <!-- Main Column -->
+                <div class="col-span-8 space-y-10">
+
+                    <!-- Profile -->
+                    <section>
+                        <h2 class="font-serif text-xl font-bold text-slate-800 mb-4 section-title">Professional Summary
+                        </h2>
+                        <p class="text-slate-600 leading-relaxed text-justify">
+                            Results-driven Python Developer with <strong>2+ years</strong> of experience architecting
+                            scalable automation and web solutions. Expert in bridging <strong>Django</strong> backends
+                            with
+                            modern <strong>React</strong> interfaces. Proven track record of reducing operational
+                            overhead
+                            by <strong>62%</strong> through intelligent automation and delivering high-performance ERP
+                            and Social systems.
+                        </p>
+                    </section>
+
+                    <!-- Experience -->
+                    <section>
+                        <h2 class="font-serif text-xl font-bold text-slate-800 mb-6 section-title">Experience</h2>
+
+                        <div class="group">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h3 class="text-lg font-bold text-slate-900">Agile Key Team</h3>
+                                <span
+                                    class="text-sm font-medium text-slate-500 bg-slate-100 px-3 py-1 rounded-full">July
+                                    2023 - Present</span>
+                            </div>
+                            <div class="text-slate-700 font-medium mb-3 italic">Python Developer</div>
+                            <ul class="list-none space-y-2 text-slate-600">
+                                <li class="flex items-start gap-2">
+                                    <span class="mt-1.5 w-1.5 h-1.5 bg-slate-400 rounded-full flex-shrink-0"></span>
+                                    <span>Architected microservices using <strong>Python & Django</strong>, ensuring
+                                        99.9% system reliability.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="mt-1.5 w-1.5 h-1.5 bg-slate-400 rounded-full flex-shrink-0"></span>
+                                    <span>Developed custom automation bots with <strong>Selenium</strong>, saving 62%
+                                        operational time.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="mt-1.5 w-1.5 h-1.5 bg-slate-400 rounded-full flex-shrink-0"></span>
+                                    <span>Optimized <strong>PostgreSQL</strong> queries, reducing data retrieval latency
+                                        by 40%.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="mt-1.5 w-1.5 h-1.5 bg-slate-400 rounded-full flex-shrink-0"></span>
+                                    <span>Integrated full-stack features using <strong>React & Next.js</strong> for 350+
+                                        vendors.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Projects -->
+                    <section>
+                        <h2 class="font-serif text-xl font-bold text-slate-800 mb-6 section-title">Key Projects</h2>
+
+                        <div class="space-y-6">
+                            <div class="border-l-2 border-slate-200 pl-4 py-1 hover:border-slate-800 transition-colors">
+                                <h3 class="font-bold text-slate-900 text-lg">Rippl Hyperlocal Platform</h3>
+                                <p class="text-sm text-slate-500 mb-2">Node.js · MongoDB · SSE</p>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    Designed a 3km geofence social graph with <strong>MongoDB 2dsphere</strong> and
+                                    real-time SSE updates. Managed full deployment pipelines via <strong>GitHub
+                                        Actions</strong>.
+                                </p>
+                            </div>
+
+                            <div class="border-l-2 border-slate-200 pl-4 py-1 hover:border-slate-800 transition-colors">
+                                <h3 class="font-bold text-slate-900 text-lg">VBS ERP System</h3>
+                                <p class="text-sm text-slate-500 mb-2">Next.js · Docker · Celery</p>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    Built a single-source-of-truth ERP for 350+ vendors. Orchestrated workflows using
+                                    <strong>Celery</strong> and <strong>MQTT</strong>, containerized with Docker.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sidebar Column -->
+                <div class="col-span-4 space-y-10">
+                    <!-- Education -->
+                    <section>
+                        <h2 class="font-serif text-xl font-bold text-slate-800 mb-4 section-title">Education</h2>
+                        <div>
+                            <h3 class="font-bold text-slate-900">M.C.A.</h3>
+                            <p class="text-slate-600 text-sm">D.R.D.Y Patil School, Pune</p>
+                            <p class="text-slate-400 text-xs mt-1">2019 - 2022 | CGPA: 8.55</p>
+                        </div>
+                    </section>
+
+                    <!-- Skills -->
+                    <section>
+                        <h2 class="font-serif text-xl font-bold text-slate-800 mb-4 section-title">Technical Skills</h2>
+
+                        <div class="mb-5">
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Core</h4>
+                            <div class="space-y-2">
+                                <span
+                                    class="block bg-slate-50 border border-slate-100 rounded px-3 py-1.5 text-sm md:text-xs lg:text-sm font-medium text-slate-700">Python
+                                    & Django</span>
+                                <span
+                                    class="block bg-slate-50 border border-slate-100 rounded px-3 py-1.5 text-sm md:text-xs lg:text-sm font-medium text-slate-700">React
+                                    & Next.js</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Data & Ops</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-2 py-1 bg-white border border-slate-200 rounded text-xs text-slate-600">PostgreSQL</span>
+                                <span
+                                    class="px-2 py-1 bg-white border border-slate-200 rounded text-xs text-slate-600">Docker</span>
+                                <span
+                                    class="px-2 py-1 bg-white border border-slate-200 rounded text-xs text-slate-600">AWS</span>
+                                <span
+                                    class="px-2 py-1 bg-white border border-slate-200 rounded text-xs text-slate-600">Pandas</span>
+                                <span
+                                    class="px-2 py-1 bg-white border border-slate-200 rounded text-xs text-slate-600">NumPy</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Achievements -->
+                    <section>
+                        <h2 class="font-serif text-xl font-bold text-slate-800 mb-4 section-title">Achievements</h2>
+                        <ul class="space-y-4">
+                            <li>
+                                <h3 class="text-sm font-bold text-slate-900">Face Recognition App</h3>
+                                <p class="text-xs text-slate-500 leading-snug mt-1">Completed hands-on project with
+                                    AI-India Initiative (AICTE)</p>
+                            </li>
+                            <li>
+                                <h3 class="text-sm font-bold text-slate-900">Solo Dance (2nd Place)</h3>
+                                <p class="text-xs text-slate-500 leading-snug mt-1">D.R.D.Y Patil School of MCA</p>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Footer Decoration -->
+                    <section class="pt-8 opacity-50">
+                        <div class="h-16 w-16 border-t-2 border-l-2 border-slate-300"></div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PDF Script -->
+    <script>
+        function downloadPDF() {
+            const element = document.getElementById('resume-container');
+            const opt = {
+                margin: 0,
+                filename: 'Kaumudi_Kalikar_Resume.pdf',
+                image: { type: 'jpeg', quality: 1 },
+                html2canvas: { scale: 2, useCORS: true, scrollY: 0 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+
+            // Temporary mods for clean PDF
+            // const originalBoxShadow = element.style.boxShadow;
+            // element.style.boxShadow = 'none';
+
+            html2pdf().set(opt).from(element).save().then(() => {
+                // element.style.boxShadow = originalBoxShadow;
+            });
+        }
+    </script>
+</body>
+
+</html>

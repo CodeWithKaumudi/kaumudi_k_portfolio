@@ -1,0 +1,45 @@
+KAUMUDI KALIKAR
+Pune, India | kaumudikalikar6@gmail.com | +91 9766 874 1197
+LinkedIn: linkedin.com/in/kaumudi-kalikar | GitHub: github.com/kaumudikalikar
+
+SUMMARY
+Python developer with 2+ years of experience building scalable web apps, automation services, and data-driven tooling across logistics and community platforms. Proven ability to deliver vendor management suites, hyperlocal social networks, and AI-enabled experiences from discovery through deployment.
+
+CORE SKILLS
+Languages: Python, JavaScript (ES6+), TypeScript, SQL, HTML5, CSS3
+Frameworks: Django, Flask, FastAPI, React, Next.js, Tailwind CSS, Jest
+Backend & Messaging: Node.js, Express.js, Celery, MQTT, Redis, SSE
+Cloud & DevOps: Railway, Vercel, GitHub Actions, Docker, Web3Forms
+Databases: PostgreSQL, MySQL, MongoDB
+Tooling: Git, Jira, Postman, Sentry, Amplitude, Ola Maps SDK
+
+EXPERIENCE
+Full-Stack Engineer | VirtualBuilding Studio | Pune, India | Jan 2023 - Present
+- Built the VBS Tracking App (Next.js + Tailwind front end, Node.js/Express.js services) to manage vendors, buyers, and suppliers in one ERP workflow.
+- Implemented Celery task runners, MQTT messaging, and PostgreSQL + MongoDB hybrid storage for high volume document flows.
+- Automated CI/CD with Dockerized builds and GitHub Actions, reducing release time by 40% while enforcing lint/test gates.
+- Integrated Web3Forms email automation, role-based access control, and audit-ready activity logs.
+
+Product Engineer (Contract) | Rippl Hyperlocal Platform | Remote | Feb 2024 - Present
+- Architected ripple propagation microservices using MongoDB 2dsphere indexes and Redis fan-out caches for geofenced feeds.
+- Developed Kotlin (Jetpack Compose) Android MVP and React/Next.js moderator console with Ola Maps visual overlays.
+- Delivered GPT-4 powered Rippl-bot auto post generator via Python automation services plus ChatGPT moderation workflows.
+- Instrumented Amplitude analytics, Sentry monitoring, and SSE notification channels to enable neighborhood-based waitlist unlocks.
+
+PROJECTS
+Rippl Hyperlocal Platform (2024): Geo-first social network for Indian neighborhoods. Built ripple engine, Kotlin client, and admin console; integrated Ola Maps, SSE fan-out, and GPT-4 automation; launched waitlist at rippl.space.
+VBS Tracking App (2023): ERP for vendor/buyer orchestration with Next.js UI, Node.js microservices, Celery task runners, MQTT messaging, and hybrid PostgreSQL/MongoDB storage.
+Face Recognition Application (2020): AICTE initiative project using Python, OpenCV, and classical ML to build face recognition attendance tooling.
+
+EDUCATION
+Master of Computer Application (M.C.A.) | D.R.D.Y Patil School of MCA, Pune | Oct 2022 | CGPA: 8.55
+Bachelor of Computer Science | University of Pune | May 2019 | Percentage: 78%
+
+CERTIFICATIONS & AWARDS
+- Ready, Set, Agile! Technology Workshop by Cognizant (2020)
+- 2nd Prize - Nishkraya Drama Competition, MIT ART University (2019)
+- 2nd Prize - Solo Dance Competition, D.R.D.Y Patil School of MCA (2020)
+- Volunteer - Equinox Cultural Event, Thakurday Mumbai (2019)
+
+KEYWORDS FOR ATS MATCHING
+Python, Django, Flask, FastAPI, React, Next.js, Tailwind CSS, Node.js, Express.js, Celery, Redis, PostgreSQL, MongoDB, MySQL, MQTT, SSE, Docker, GitHub Actions, Railway, Vercel, Ola Maps, Web3Forms, GPT-4, OpenAI, Amplitude, Sentry, Vendor Management, Hyperlocal Social, ERP, Automation, REST APIs

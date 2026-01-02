@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200 dark:border-slate-800;
+  }
+  body {
+    @apply bg-white text-gray-900 font-sans transition-colors duration-500 dark:bg-slate-950 dark:text-gray-100;
+  }
+  html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-blue-600 dark:from-primary-400 dark:to-blue-400;
+  }
+
+  .text-gradient-light {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-primary-200 to-blue-200;
+  }
+  
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 lg:py-24;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+}

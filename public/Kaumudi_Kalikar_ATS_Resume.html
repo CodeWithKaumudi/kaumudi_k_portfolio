@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaumudi Kalikar - ATS Resume</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            color: #1a1a1a;
+            max-width: 210mm;
+            margin: 40px auto;
+            background-color: #f8f9fa;
+        }
+
+        .page {
+            background: white;
+            padding: 40px 50px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid #1e3a8a;
+            /* Deep Blue Top Border */
+            border-bottom: 5px solid #1e3a8a;
+            /* Deep Blue Bottom Border */
+            position: relative;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #1e3a8a;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-size: 15px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #1e3a8a;
+            display: flex;
+            align-items: center;
+        }
+
+        h3 {
+            font-size: 16px;
+            margin: 0 0 2px 0;
+            font-weight: 600;
+            color: #0f172a;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #475569;
+            border-left: 3px solid #0ea5e9;
+            padding-left: 15px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            font-weight: 500;
+            color: #334155;
+            margin-bottom: 5px;
+            font-style: italic;
+        }
+
+        ul {
+            margin-top: 5px;
+            padding-left: 18px;
+            font-size: 14px;
+            color: #334155;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        strong {
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        /* Buttons logic */
+        .btn-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 100;
+        }
+
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+            color: #333;
+            background: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            z-index: 100;
+            font-weight: bold;
+        }
+
+        .download-btn {
+            background: #1e3a8a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .download-btn:hover {
+            background: #1e40af;
+        }
+
+        @media print {
+            body {
+                background: white;
+                margin: 0;
+                padding: 0;
+            }
+
+            .page {
+                box-shadow: none;
+                margin: 0;
+                width: 100%;
+                border: none;
+                padding: 30px;
+            }
+
+            .btn-container,
+            .back-btn {
+                display: none;
+            }
+
+            /* Force borders to print if possible, though browsers might strip them */
+            .page {
+                border-color: #1e3a8a !important;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="/" class="back-btn">← Back to Portfolio</a>
+
+    <div class="btn-container">
+        <button onclick="window.print()" class="download-btn">Download PDF</button>
+    </div>
+
+    <div class="page">
+        <h1>Kaumudi Kalikar</h1>
+        <div class="contact-info">
+            Pune, India • +91 9766 516 480 • kaumudikalikar6@gmail.com<br>
+            linkedin.com/in/kaumudi-kalikar • github.com/kaumudi-kalikar
+        </div>
+
+        <h2>Professional Summary</h2>
+        <p style="font-size: 14px; margin-top: 5px; color: #334155;">
+            Results-driven <strong>Python Developer</strong> with <strong>2+ years</strong> of hands-on experience in
+            building scalable web applications. Expertise in Python, Django, React, and modern web technologies.
+            Demonstrated ability to deliver high-quality, maintainable code for both client-facing and internal
+            projects.
+        </p>
+
+        <h2>Technical Skills</h2>
+        <ul style="list-style-type: none; padding-left: 0;">
+            <li><strong>Languages:</strong> Python, C++, JavaScript (ES6+), SQL</li>
+            <li><strong>Web Frameworks:</strong> Django, Flask, FastAPI, Node.js, Express.js, React, Next.js</li>
+            <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, Redis</li>
+            <li><strong>Tools:</strong> Git, Docker, GitHub Actions, AWS, Selenium, Tailwind CSS, Pandas, NumPy</li>
+        </ul>
+
+        <h2>Professional Experience</h2>
+
+        <h3>Agile Key Team | Pune, India</h3>
+        <div class="subtitle"><strong>Python Developer</strong> | <em>July 2023 – Present</em></div>
+        <ul>
+            <li>Architected and maintained robust backend systems using <strong>Python</strong> and
+                <strong>Django</strong>, improving system reliability.
+            </li>
+            <li>Developed responsive user interfaces using <strong>React</strong> and <strong>Tailwind CSS</strong>.
+            </li>
+            <li>Designed automated data extraction tools using <strong>Selenium</strong> and
+                <strong>BeautifulSoup</strong>, saving <strong>62%</strong> of operational time.
+            </li>
+            <li>Optimized <strong>PostgreSQL</strong> database schemas and queries, resulting in <strong>40%
+                    faster</strong> data retrieval.</li>
+            <li>Implemented <strong>RESTful APIs</strong> for seamless third-party integrations with Zoho and Slack.
+            </li>
+        </ul>
+
+        <h2>Project Highlights</h2>
+
+        <h3>Rippl Hyperlocal Platform</h3>
+        <div class="subtitle"><em>Full Stack Developer</em></div>
+        <ul>
+            <li>Built a hyperlocal social graph platform using <strong>Node.js</strong>, and
+                <strong>MongoDB</strong>.
+            </li>
+            <li>Implemented 3km geofence logic and real-time updates via <strong>SSE</strong>.</li>
+            <li>Developed Python-based automation services for content seeding and moderation.</li>
+        </ul>
+
+        <h3>VBS Tracking App (ERP Solution)</h3>
+        <div class="subtitle"><em>Full Stack Developer</em></div>
+        <ul>
+            <li>Developed a comprehensive ERP solution for 350+ vendors using <strong>Next.js</strong> and
+                <strong>Node.js</strong>.
+            </li>
+            <li>Designed microservices with <strong>Celery</strong> and <strong>MQTT</strong> for real-time
+                orchestration.</li>
+            <li>Streamlined business operations, serving as the single source of truth for the organization.</li>
+        </ul>
+
+        <h2>Education</h2>
+        <h3>Master of Computer Application (MCA)</h3>
+        <div class="subtitle">D.R.D.Y Patil School of MCA, Pune | <em>Aug 2019 – Oct 2022</em></div>
+        <ul>
+            <li>CGPA: 8.55</li>
+        </ul>
+
+        <h2>Achievements</h2>
+        <ul>
+            <li><strong>Completed Hands-on Project</strong>, "Build a Face Recognition Application using Python",
+                AI-India Initiative (AICTE).</li>
+            <li><strong>Participant</strong>, "Ready, Set, Agile!" Workshop by Cognizant.</li>
+        </ul>
+    </div>
+</body>
+
+</html>
