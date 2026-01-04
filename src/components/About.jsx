@@ -54,13 +54,13 @@ const About = () => {
               <div className="relative bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl border border-gray-100 dark:border-slate-800">
                 <h3 className="text-2xl font-display font-bold mb-4 text-gray-900 dark:text-white">Career Profile</h3>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                  Results-driven Python Developer with 2+ years of hands-on experience in building scalable web 
-                  applications using Django, Flask, Python, and modern JavaScript technologies. Proficient in 
+                  Results-driven Python Developer with 2+ years of hands-on experience in building scalable web
+                  applications using Django, Flask, Python, and modern JavaScript technologies. Proficient in
                   web scraping (Selenium/Soup), Selenium, REST API integration, and PostgreSQL database design.
                 </p>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                  Demonstrated expertise in understanding of full stack development, with a focus on delivering 
-                  high-quality, maintainable code for both client-facing and internal projects across diverse, 
+                  Demonstrated expertise in understanding of full stack development, with a focus on delivering
+                  high-quality, maintainable code for both client-facing and internal projects across diverse,
                   growth-oriented organizations.
                 </p>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -73,7 +73,7 @@ const About = () => {
                     <div>
                       <p className="font-semibold text-gray-900 dark:text-white">Master of Computer Application (M.C.A.)</p>
                       <p className="text-sm text-gray-600 dark:text-gray-300">D.R.D.Y Patil School of MCA, Pune</p>
-                      <p className="text-sm text-gray-500 dark:text-gray-400">Aug 2019 - Oct 2022 | CGPA: 8.55</p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400">Oct 2022 | CGPA: 8.93</p>
                     </div>
                   </div>
                 </div>
