@@ -30,7 +30,7 @@ const ripplFeatureCards = [
     icon: Server,
     title: 'Backend & Deployment',
     description:
-      'Node.js/Express microservices with SSE fan-out, Railway-hosted containers, GitHub Actions CI/CD, and Redis queues for waitlist + notification orchestration.',
+      'Node.js/Express microservices with SSE fan-out, Docker containers on Railway, GitHub Actions CI/CD, and Redis queues for waitlist + notification orchestration.',
   },
   {
     icon: Database,
@@ -52,6 +52,7 @@ const ripplTechStack = [
   'Node.js + Express API gateway',
   'MongoDB 2dsphere geo indexes',
   'Redis caching & waitlist counters',
+  'Docker containerization',
   'Railway hosting + Buckets media storage',
   'Ola Maps vector tiles',
   'SSE notifications pipeline',
