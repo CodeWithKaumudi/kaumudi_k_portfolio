@@ -47,8 +47,8 @@ const Hero = () => {
               transition={{ delay: 1.2, type: "spring" }}
               className="absolute -top-12 -left-6 bg-white dark:bg-slate-800 px-4 py-2 rounded-2xl rounded-br-none shadow-lg border border-gray-100 dark:border-slate-700 z-20"
             >
-              <span className="text-2xl">⚡</span>
-              <span className="font-bold text-sm text-gray-800 dark:text-white ml-2">Powered by Code!</span>
+              <span className="text-2xl">✨</span>
+              <span className="font-bold text-sm text-gray-800 dark:text-white ml-2">Turning Ideas into Reality</span>
             </motion.div>
             <img
               src="/preview.jpg"
