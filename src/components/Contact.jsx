@@ -174,7 +174,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-white dark:bg-slate-950 border border-gray-200 dark:border-slate-700 text-gray-900 dark:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 bg-white dark:bg-slate-950 border border-gray-200 dark:border-slate-700 text-gray-900 dark:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all [&:-webkit-autofill]:shadow-[0_0_0_1000px_white_inset] [&:-webkit-autofill]:-webkit-text-fill-color-gray-900 dark:[&:-webkit-autofill]:shadow-[0_0_0_1000px_#020617_inset] dark:[&:-webkit-autofill]:-webkit-text-fill-color-white"
                   placeholder="John Doe"
                 />
               </div>
@@ -190,7 +190,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-white dark:bg-slate-950 border border-gray-200 dark:border-slate-700 text-gray-900 dark:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 bg-white dark:bg-slate-950 border border-gray-200 dark:border-slate-700 text-gray-900 dark:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all [&:-webkit-autofill]:shadow-[0_0_0_1000px_white_inset] [&:-webkit-autofill]:-webkit-text-fill-color-gray-900 dark:[&:-webkit-autofill]:shadow-[0_0_0_1000px_#020617_inset] dark:[&:-webkit-autofill]:-webkit-text-fill-color-white"
                   placeholder="john@example.com"
                 />
               </div>
@@ -206,7 +206,7 @@ const Contact = () => {
                   value={formData.topic}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-white dark:bg-slate-950 border border-gray-200 dark:border-slate-700 text-gray-900 dark:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 bg-white dark:bg-slate-950 border border-gray-200 dark:border-slate-700 text-gray-900 dark:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all [&:-webkit-autofill]:shadow-[0_0_0_1000px_white_inset] [&:-webkit-autofill]:-webkit-text-fill-color-gray-900 dark:[&:-webkit-autofill]:shadow-[0_0_0_1000px_#020617_inset] dark:[&:-webkit-autofill]:-webkit-text-fill-color-white"
                   placeholder="Project Inquiry"
                 />
               </div>
@@ -222,7 +222,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows="5"
-                  className="w-full px-4 py-3 bg-white dark:bg-slate-950 border border-gray-200 dark:border-slate-700 text-gray-900 dark:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
+                  className="w-full px-4 py-3 bg-white dark:bg-slate-950 border border-gray-200 dark:border-slate-700 text-gray-900 dark:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none [&:-webkit-autofill]:shadow-[0_0_0_1000px_white_inset] [&:-webkit-autofill]:-webkit-text-fill-color-gray-900 dark:[&:-webkit-autofill]:shadow-[0_0_0_1000px_#020617_inset] dark:[&:-webkit-autofill]:-webkit-text-fill-color-white"
                   placeholder="Tell me about your project..."
                 ></textarea>
               </div>
@@ -230,10 +230,10 @@ const Contact = () => {
               {status.message && (
                 <div
                   className={`mb-6 rounded-lg px-4 py-3 text-sm font-medium ${status.type === 'success'
-                    ? 'bg-green-100 text-green-700'
+                    ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400'
                     : status.type === 'error'
-                      ? 'bg-red-100 text-red-700'
-                      : 'bg-primary-100 text-primary-700'
+                      ? 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400'
+                      : 'bg-primary-100 text-primary-700 dark:bg-slate-800 dark:text-primary-400'
                     }`}
                 >
                   {status.message}
